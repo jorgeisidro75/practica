@@ -3,9 +3,10 @@
     <h1>{{ msg }}</h1>
     <h1>{{ hola }}</h1>
     <h1>{{ hola }}</h1>
-    <ul>
-      <li v-for="usuario in nombreCompleto" v-bind:key="usuario">
-        {{ usuario | mayusculas | acortado(10) }}
+    <ul v-for="usuario in nombreCompleto" v-bind:key="usuario">
+      <li >
+        <!-- {{ usuario | mayusculas | acortado(10) }} -->
+        {{ usuario | mayusculas }}
       </li>
     </ul>
   </div>
