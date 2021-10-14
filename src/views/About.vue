@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="containerAbout">
     <h1>This is an about page</h1>
     <ul>
       <li v-for="usuario in usuarios" v-bind:key="usuario">
@@ -26,3 +26,8 @@ export default {
   },
 };
 </script>
+<style scoped>
+.container {
+  margin-top: 5rem;
+}
+</style>

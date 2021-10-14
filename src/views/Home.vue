@@ -1,18 +1,41 @@
 <template>
-  <div class="home">
+  <div class="containerHome text-center">
    
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Mostrar 
+    :perfiles="perfiles"
+    />
+    <Obtener 
+    @perfil-action="getUsuario"
+    />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Obtener from "@/components/Obtener.vue";
+import Mostrar from "@/components/Mostrar.vue";
+
+import { mapState, mapActions} from "vuex";
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
-    HelloWorld
-  }
-}
+    Mostrar,
+    Obtener,
+  },
+  computed: {
+    ...mapState("UserStore", ["perfiles"]),
+  },
+  methods: {
+    ...mapActions("UserStore", ["getUsuario"]),
+  },
+  created() {
+    this.getUsuario();
+  },
+};
 </script>
+<style scoped>
+.container {
+  margin-top: 5rem;
+}
+</style>
