@@ -12,8 +12,8 @@
 
 <script>
 // @ is an alias to /src
-import Obtener from "@/components/Obtener.vue";
-import Mostrar from "@/components/Mostrar.vue";
+import Obtener from "@/components/home/Obtener.vue";
+import Mostrar from "@/components/home/Mostrar.vue";
 
 import { mapState, mapActions} from "vuex";
 

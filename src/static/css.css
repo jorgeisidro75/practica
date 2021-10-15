@@ -1,8 +1,9 @@
 .containerHome {
   margin-top: 5rem;
-  padding: 10px 100px;
+  padding: 0px 100px;
+  height: 150vh;
 }
 .containerAbout {
   margin-top: 5rem;
-  padding: 10px 100px;
+  padding: 0px 100px;
 }

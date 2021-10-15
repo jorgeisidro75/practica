@@ -2,7 +2,7 @@
   <div class="containerAbout">
     <h1>This is an about page</h1>
     <ul>
-      <li v-for="usuario in usuarios" v-bind:key="usuario">
+      <li v-for="(usuario, index) in usuarios" v-bind:key="index">
         {{ usuario.name }} -- {{ usuario.address.street }} -- - -
         {{ usuario.company.name }}
       </li>

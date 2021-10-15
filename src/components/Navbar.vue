@@ -28,10 +28,10 @@
             </a>
             <ul class="dropdown-menu bg-dark " aria-labelledby="navbarDropdown">
               <li class="nav-item">
-                <router-link class="nav-link dropdown-item " to="#" aria-current="page">Perfil</router-link>
+                <router-link class="nav-link dropdown-item " to="/tareas" aria-current="page">Tareas</router-link>
               </li>
               <li class="nav-item ">
-                <router-link class="nav-link dropdown-item " to="#" aria-current="page">Login</router-link>
+                <router-link class="nav-link dropdown-item " to="/herramienta#" aria-current="page">Herramienta</router-link>
               </li>
               <li class="nav-item">
                 <router-link class="nav-link dropdown-item " to="#" aria-current="page">other</router-link>
